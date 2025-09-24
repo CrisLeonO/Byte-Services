@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bite Services</title>
+    <link rel="stylesheet" href="style/style.css"> <!-- Enlace a una hoja de estilo externa -->
+    <!-- Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32"  href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <!-- Logo y nabvar -->
+       <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" width="170" height="170" class="d-inline-block align-top" alt="logo">
+                </a>
+                <div class="menu">
+                    <ul class="navbar-nav text-center">
+
+                        <li class="nav-item dropdown my-5">
+                            <div class="submenu">
+                                <a class="nav-link fw-semibold dropdown-toggle" href="servidores.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Servidores Completos
+                                </a>
+                                <ul class="dropdown-menu mega-menu p-3 bg-danger-subtle">
+                                    <li><a class="dropdown-item" href="servidores.html">Servidor Básico Hogar/NAS</a></li>
+                                    <li><a class="dropdown-item" href="servidores.html">Servidor Intermedio Oficina / Desarrolladores</a></li>
+                                    <li><a class="dropdown-item" href="servidores.html">Servidor Avanzado Potencia y Virtualización</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--acá prueba-->
+                        <li class="nav-item dropdown my-5">
+                            <a class="nav-link fw-semibold dropdown-toggle" href="" id="componentesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Componentes
+                            </a>
+                            <ul class="dropdown-menu items-componentes" aria-labelledby="componentesDropdown">
+                                <!-- ITEM: CHASIS/CAJAS -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item submenu-toggle" href="cajas.html">Chasis / Cajas</a>
+                                    <ul class="dropdown-menu items-componentes">
+                                        <li><a class="dropdown-item" href="cajas.html">Mini Tower</a></li>
+                                        <li><a class="dropdown-item" href="cajas.html">Micro-ATX</a></li>
+                                        <li><a class="dropdown-item" href="cajas.html">Caja Brebore</a></li>
+                                        <li><a class="dropdown-item" href="cajas.html">Fractal Design Node 304</a></li>
+                                        <li><a class="dropdown-item" href="cajas.html">Cooler Master NR200</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- ITEM: Placas Madre -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item submenu-toggle" href="placas_madres.html">Placas Madre</a>
+                                    <ul class="dropdown-menu items-componentes">
+                                        <li><a class="dropdown-item" href="placas_madres.html">Servidores compactos</a></li>
+                                        <li><a class="dropdown-item" href="placas_madres.html">Servidores de propósito general</a></li>
+                                        <li><a class="dropdown-item" href="placas_madres.html">Workstation / Servidor híbrido</a></li>
+                                        <li><a class="dropdown-item" href="placas_madres.html">Servidores profesionales</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- ITEM: Procesadores -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item submenu-toggle" href="procesadores.html">Procesadores</a>
+                                    <ul class="dropdown-menu items-componentes">
+                                        <li><a class="dropdown-item" href="procesadores.html">Intel</a></li>
+                                        <li><a class="dropdown-item" href="procesadores.html">Procesadores para PC <br>y servidores caseros</a></li>
+                                        <li><a class="dropdown-item" href="procesadores.html">Procesadores para <br>servidores profesionales</a></li>
+                                        <li><a class="dropdown-item" href="procesadores.html">AMD</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- ITEM: Memorias RAM -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item submenu-toggle" href="ram.html">Memorias RAM</a>
+                                    <ul class="dropdown-menu items-componentes">
+                                        <li><a class="dropdown-item" href="ram.html">DDR4 / DDR5</a></li>
+                                        <li><a class="dropdown-item" href="ram.html">UDIMM / RDIMM / LRDIMM</a></li>
+                                        <li><a class="dropdown-item" href="ram.html">ECC (Error-Correcting Code)</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- ITEM: Fuentes de Poder -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item submenu-toggle" href="fuente_poder.html">Fuentes de Poder</a>
+                                    <ul class="dropdown-menu items-componentes">
+                                        <li><a class="dropdown-item" href="fuente_poder.html">ATX estándar</a></li>
+                                        <li><a class="dropdown-item" href="fuente_poder.html">SFX (Small Form Factor)</a></li>
+                                        <li><a class="dropdown-item" href="fuente_poder.html">Fuentes redundantes (hot-swap)</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- ITEM: Sistemas de Refrigeracion -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item submenu-toggle" href="refrigeracion.html">Sistemas de Refrigeracion</a>
+                                    <ul class="dropdown-menu items-componentes">
+                                        <li><a class="dropdown-item" href="refrigeracion.html">Refrigeración por aire (Air Cooling)</a></li>
+                                        <li><a class="dropdown-item" href="refrigeracion.html">Refrigeración líquida</a></li>
+                                        <li><a class="dropdown-item" href="refrigeracion.html">Refrigeración activa en rack</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- ITEM: Tarjeta gráfica (GPU básica o dedicada) -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item submenu-toggle" href="tarjetas_graficas.html">Tarjeta gráfica (GPU básica o dedicada)</a>
+                                    <ul class="dropdown-menu items-componentes">
+                                        <li><a class="dropdown-item" href="tarjetas_graficas.html">NVIDIA GT 710</a></li>
+                                        <li><a class="dropdown-item" href="tarjetas_graficas.html">Quadro NVS 310</a></li>
+                                        <li><a class="dropdown-item" href="tarjetas_graficas.html">NVIDIA GTX / RTX “gaming” <br>(RTX 3060, 3070, 3080)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </li>
+
+                        
+                        <li class="nav-item dropdown my-5">
+                            <div class="contain-fluid">
+                                <a class="nav-link fw-semibold dropdown-toggle" href="almacenamiento.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Almacenamiento
+                                </a>
+                                
+                                <ul class="dropdown-menu mega-menu p-2 mx-3">
+                                    <h6 class="dropdown-header letter-components">Almacenamiento en Servidores</h6>                                            
+                                        <li><a class="dropdown-item" href="almacenamiento.html">HDD (Disco duro mecánico)</a></li>
+                                        <li><a class="dropdown-item" href="almacenamiento.html">SSD SATA</a></li>
+                                        <li><a class="dropdown-item" href="almacenamiento.html">SSD NVMe (PCIe)</a></li>
+                                        <li><a class="dropdown-item" href="almacenamiento.html">Almacenamiento híbrido</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        </li>
+                        <li class="nav-item dropdown my-5">
+                            <div class="submenu">
+                                <a class="nav-link fw-semibold dropdown-toggle" href="conectividad.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Conectividad
+                                </a>
+                                <ul class="dropdown-menu mega-menu p-2">
+                                    <li><a class="dropdown-item" href="conectividad.html">Tarjeta 1 Gbps integrada</a></li>
+                                    <li><a class="dropdown-item" href="conectividad.html">Tarjeta 2.5 Gbps</a></li>
+                                </ul>                                            
+                            </div>
+                        </li>
+                        <li class="nav-item my-5">
+                            <a class="nav-link fw-semibold" href="#">Blog</a>
+                        </li>
+                        <li class="mx-3 d-flex">
+                            <button type="button" class="my-5 my-button fw-semibold">Ingresar</button>
+                        </li>
+                        <li class="nav-item my-4 p-1">
+                                <a class="nav-link" href="#"><img src="images/carrito.png" width="60" height="60" class="d-inline-block align-top" alt="">
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Contenedor principal -->
+    </header>
+
+    <main class="container my-4">
+        <div class="row g-3">
+            <section class="col-md-12 mb-3 p-1">
+                <h2 class="text-center my-3">Nosotros</h2>
+                <p class="justify-content-center">En ByteServices ayudamos a personas y empresas a crecer a través de soluciones tecnológicas confiables y eficientes.</p>
+                <p class="justify-content-center">Ofrecemos servicios de desarrollo web, soporte técnico, seguridad informática y consultoría digital, diseñados para facilitar la vida de nuestros clientes y optimizar sus procesos.</p>
+                <p class="justify-content-center">Nuestro equipo combina experiencia y pasión por la tecnología para brindar atención personalizada y resultados de calidad. En ByteServices, tu éxito digital es nuestra prioridad.</p>
+            </section>
+            
+        </div>
+    </main>
+    </div>
+
+    <!--footer-->
+    <footer class="footer bg-danger-subtle ">
+        <div class="container flex-content">
+            <div class="row justify-content-center g-3">
+                <div class="col-md-3 mb-2">
+                    <img src="images/logo.png" width="150" height="150" class="d-inline-block align-top" alt="logo footer">
+                    <p class="letra-blanca fw-semibold">Encuéntranos en:</p>
+                    <img src="images/facebook.png" width="40" height="40" class="icon d-inline-block align-top" alt="facebook">
+                    <img src="images/instagram.png" width="40" height="40" class="icon d-inline-block align-top" alt="instagram">
+                    <img src="images/youtube.png" width="40" height="40" class="icon d-inline-block align-top" alt="twitter">
+                    <img src="images/whatsapp.png" width="40" height="40" class="icon d-inline-block align-top" alt="youtube">
+                    <img src="images/tik-tok.png" width="40" height="40" class="icon d-inline-block align-top" alt="tiktok">
+                </div>
+                <div class="col-md-2">
+                <h5 class="letra-blanca fw-semibold">Bite Services</h5>
+                    <span"><a href="index.html" class="text-footer">Inicio</a></span><br>    
+                    <span"><a href="nosotros.html" class="text-footer">Nosotros</a></span><br>
+                </div>
+                <div class="col">
+                <h5 class="letra-blanca fw-semibold">Servidores Completos</h5>
+                    <span><a href="servidores.html" class="text-footer">NAS</a></span><br>
+                    <span><a href="servidores.html" class="text-footer">Oficina / Desarrolladores</a></span><br>
+                    <span><a href="servidores.html" class="text-footer">Avanzado Potencia y virtualización</a></span><br>
+                </div>
+                <div class="col">
+                    <h5 class="letra-blanca fw-semibold">Componentes</h5>
+                        <span><a href="cajas.html"class="text-footer">Chasis/Cajas</a></span><br>
+                        <span><a href="placas_base.html"class="text-footer">Placas base</a></span><br>
+                        <span><a href="procesadores.html"class="text-footer">Procesadores</a></span><br>
+                        <span><a href="ram.html"class="text-footer">Memorias RAM</a></span><br>
+                        <span><a href="fuente_poder.html"class="text-footer">Fuentes de Poder</a></span><br>
+                        <span><a href="refrigeracion.html"class="text-footer">Sistemas de Refrigeración</a></span><br>
+                        <span><a href="tarjetas_graficas.html"class="text-footer">Tarjetas Gráficas</a></span><br>
+                </div>
+                <div class="col">
+                    <h5 class="letra-blanca fw-semibold">Conoce nuestra tienda</h5>
+                    <p class="text-footer">Cll 7 # 20 - 23 Bogotá, Colombia</p>
+                    <p class="text-footer">60(1) 4782774</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/componentes.js"></script> <!-- Enlace a un archivo JavaScript -->
+    <!-- Bootstrap JS y jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

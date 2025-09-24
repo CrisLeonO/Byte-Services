@@ -1,0 +1,184 @@
+.letra-blanca {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navbar {
+    background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.nav-link {
+        color: #ffffff !important;
+        display: block; 
+        margin: 5px;
+        border-radius: 10px 0px 6px 6px;  
+}
+
+.nav-link:hover {
+    color: #00ff80 !important; /* Negro al pasar el ratón */
+    background-color: transparent;
+    font-size: 1.1rem;
+}
+
+.my-button {
+      background-color: transparent;
+      border-color: #ffffff;
+      color: #ffffff; 
+      border-radius: 10px 0px 6px 0px;
+      font-weight: 500;
+      width: 100px;
+}
+
+.my-button:hover {
+      background-color: transparent; /* Color rosa en hexadecimal */
+      color: #000000; 
+      font-size: 1.1rem;
+      border-color: #159957;
+}
+
+.footer {
+    text-align: left; /* Alinea el contenido a la izquierda */
+    display: flex; /* Si quieres alinear en bloque */
+    flex-direction: column; /* Elementos uno debajo del otro */
+    align-items: flex-start; /* Fuerza alineación a la izquierda */
+    padding: 3rem; /* Para que no quede pegado al borde */
+    text-decoration: none;
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text-footer {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.text-footer:hover {
+    color: #00ff80; /* Cambiar color de texto al pasar el mouse */
+    font-weight: bold;
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Aumentar tamaño al pasar el mouse */
+    transition: transform 0.3s ease;
+}
+
+/* Mostrar menú con hover 
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* evita salto raro 
+}*/
+/* Hacer el mega menú ancho */
+/* Asegurar que el li padre sea relativo */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.items-componentes {
+  color: #ffffff !important;
+  background: linear-gradient(to top, #536976, #BBD2C5);
+}
+
+.letter-components {
+  color: #000000 !important;
+  display: block; 
+  text-decoration: none;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none; /* Quita las viñetas */
+  padding-left: 0; /* Quita la indentación por defecto */
+  margin: 0; /* Opcional: elimina el margen por defecto */
+}
+
+/* Centrar el mega menú */
+.mega-menu {
+  position: absolute;
+  top: 100%;                 /* aparece debajo del enlace */
+  /*left: 140%;                 /* lo ubicamos en el centro */
+  /*transform: translateX(-50%); /* ajuste fino de centrado */
+  
+  /*width: 500px;             /* ancho fijo controlado */
+  max-width: 95vw;           /* nunca más ancho que la pantalla */
+  border-radius: 8px;
+  /*background: #fff;
+  
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 1050;             /* sobre otros elementos */
+}
+
+.menu-componentes{
+  position: absolute;
+  top: 100%; 
+  width: 1000px;             /* ancho fijo controlado */
+  max-width: 95vw;           /* nunca más ancho que la pantalla */
+  background: linear-gradient(to top, #155799, #159957);
+}
+
+.menu-componentes h6 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000000; /* gris oscuro, se ve elegante */
+  border-bottom: 2px solid rgb(204, 204, 204); /* línea debajo del título */
+  padding-bottom: 5px;           /* espacio entre el texto y la línea */
+  margin-bottom: 10px;           /* espacio con lo que sigue */
+}
+.mega-menu h6 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000000; /* gris oscuro, se ve elegante */
+  border-bottom: 2px solid rgb(204, 204, 204); /* línea debajo del título */
+  padding-bottom: 5px;           /* espacio entre el texto y la línea */
+  margin-bottom: 10px;           /* espacio con lo que sigue */
+}
+
+.mega-menu {
+  background: linear-gradient(to top, #536976, #BBD2C5);
+  
+}
+
+.dropdown-item:hover {
+    color: #ffffff !important; /* Amarillo al pasar el ratón */
+    background-color: transparent !important;
+}
+
+.carousel-inner img {
+    width: 100%;           /* ocupa todo el ancho */
+    height: 300px;         /* fija la altura */
+    object-fit: contain;     /* recorta para llenar el espacio */
+    object-position: center; /* centra la parte visible de la imagen */
+    background: linear-gradient(to right, #ece9e6, #ECE9E6);
+}
+
+.boton-slider{
+  background-color: grey;
+}
+
+.tarjetas-productos {
+    width: 100%;           /* ocupa todo el ancho */
+    height: 210px;         /* fija la altura */
+}
+
+
+/* Estilo para submenús en cascada */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -0.125rem;
+  display: none;
+  position: absolute;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
